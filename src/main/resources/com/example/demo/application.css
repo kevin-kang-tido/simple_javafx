@@ -1,0 +1,13 @@
+.root {
+    -fx-background-color: #f4f4f4;
+}
+
+.button {
+    -fx-padding: 8px;
+    -fx-background-color: #7a7a7a;
+    -fx-text-fill: white;
+}
+
+.slider {
+    -fx-padding: 8px;
+}

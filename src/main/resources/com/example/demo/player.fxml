@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<VBox xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MediaController">
+
+    <HBox>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem fx:id="openFile" text="Open" />
+            </Menu>
+        </MenuBar>
+        <Button fx:id="closeButton" alignment="top_right" contentDisplay="RIGHT" text="X" textAlignment="JUSTIFY">
+         <HBox.margin>
+            <Insets bottom="20.0" left="500.0" right="20.0" top="12.0" />
+         </HBox.margin></Button>
+    </HBox>
+
+    <MediaView fx:id="mediaView" fitHeight="400" fitWidth="600" />
+     <Slider fx:id="timeSlider" maxWidth="600" />
+
+    <!-- Timeline Slider for Video Playback -->
+    <HBox alignment="center" spacing="10" />
+
+    <HBox alignment="center" spacing="10">
+        <Button fx:id="playButton" text="Play" />
+        <Button fx:id="pauseButton" text="Pause" />
+        <Button fx:id="stopButton" text="Stop" />
+    </HBox>
+
+    <HBox alignment="center" spacing="10">
+        <Label text="Volume" />
+        <Slider fx:id="volumeSlider" max="100" min="0" value="50" />
+    </HBox>
+
+</VBox>
